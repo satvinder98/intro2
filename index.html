@@ -89,7 +89,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <div class="w3-container">
-      <p>Write about your experience</p>
+        <q><i>Education without application is just entertainment</i></q> <p>- Tim Sander</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
           <p><a class="w3-button w3-padding-large w3-white w3-border" href="about_internship.html"><b>READ MORE</b></a></p>
@@ -111,7 +111,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <div class="w3-container">
-      <p>Wrtite about your experience.</p>
+      <q><i>Talent wins games, but teamwork and intelligence win championships.</i></q> <p>- Michael Jordan</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
           <p><a class="w3-button w3-padding-large w3-white w3-border" href="about_training.html"><b>READ MORE</b></a></p>
@@ -203,43 +203,53 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <div class="row"> 
             <div class="column">
-                <img src="marathon1.jpg" style="width:100%">
-                <img src="marathon2.jpg" style="width:100%">
-                <img src="track.jpg" style="width:100%">
-                <img src="iv4.jpg" style="width:100%">
-                <img src="iv1.jpg" style="width:100%">
-                <img src="/w3images/mist.jpg" style="width:100%">
-                <img src="/w3images/paris.jpg" style="width:100%">
+                <img src="marathon1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="marathon2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="track.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="iv4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            
+                
             </div>
             <div class="column">
-                <img src="marathon3.jpg" style="width:100%">
-                <img src="volleyball1.jpg" style="width:100%">
-                <img src="football3.jpg" style="width:100%">
-                <img src="football4.jpg" style="width:100%">
-                <img src="/w3images/rocks.jpg" style="width:100%">
-                <img src="/w3images/underwater.jpg" style="width:100%">
+                <img src="marathon3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="volleyball1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="football3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="football4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                
             </div>  
             <div class="column">
-                <img src="football1.jpg" style="width:100%">
-                <img src="twin.jpg" style="width:100%">
-                <img src="taj2.jpg" style="width:100%">
-                <img src="iv5.jpg" style="width:100%">
-                <img src=".jpg" style="width:100%">
-                <img src="/w3images/mist.jpg" style="width:100%">
-                <img src="/w3images/paris.jpg" style="width:100%">
+                <img src="football1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="twin.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="taj2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="iv5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            
+
             </div>
             <div class="column">
-                <img src="football2.jpg" style="width:100%">
-                <img src="hockey2.jpg" style="width:100%">
-                <img src="hockey1.jpg" style="width:100%">
-                <img src="taj1.jpg" style="width:100%">
-                <img src="iv6.jpg" style="width:100%">
-                <img src="/w3images/underwater.jpg" style="width:100%">
+                <img src="football2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="hockey2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="hockey1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="taj1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="iv6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+                
+                
+            </div>
+        </div>
+        
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width:100%">
             </div>
         </div>
     </div>
 </div>
-
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
 <!-- END w3-content -->
 </div>
 
@@ -252,4 +262,3 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 </body>
 </html>
-
